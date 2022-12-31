@@ -6,12 +6,13 @@
     <input type="text" [(ngModel)]="age">
     <!--  <h2 *ngIf="age<18">Dưới 18</h2>
     <h2 *ngIf="age>=18">Trên 18</h2> -->
-    <div *ngIf="age< 18 then young else old"> </div>
-    <ng-template #young>
-        <h2> Dưới 18</h2>
-    </ng-template>
-    <ng-template #old>
-        <h2> Trên 18</h2>
-    </ng-template>
-    <button (click)="resetName()">Reset Name</button>
+    <div *ngIf="age< 18 then young else old">
+
+        <ng-template #young>
+            <h2> Dưới 18</h2>
+        </ng-template>
+        <ng-template #old>
+            <h2> Trên 18</h2>
+        </ng-template>
+    </div>
 </div>

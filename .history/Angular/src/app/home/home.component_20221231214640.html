@@ -1,0 +1,9 @@
+<div class="test">
+    <p>home works!</p>
+    <h2>Hello {{name}}!</h2>
+    <input type="text" value="{{name}}">
+    <input type="text" [value]="name" [title]='"day la " + name'>
+    <h2 *ngIf="age<18">Dưới 18</h2>
+    <h2 *ngIf="age>=18">Trên 18</h2>
+    <button (click)="resetName()">Reset Name</button>
+</div>
