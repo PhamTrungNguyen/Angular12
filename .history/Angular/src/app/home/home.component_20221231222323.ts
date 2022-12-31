@@ -14,6 +14,6 @@ export class HomeComponent {
     console.log('resetName');
   }
   public ngOnInit(): void {
-    console.log('Fruit', this.fruit);
+    console.log(Fr);
   }
 }

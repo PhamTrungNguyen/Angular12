@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  public fruit = ['apple', 'orange'];
+  public fruit = [];
 
   public ngOnInit(): void {
     console.log('Fruit', this.fruit);
