@@ -1,0 +1,19 @@
+<p>reactive-form works!</p>
+
+<form action="" [formGroup]="formData">
+    Name:
+    <input type="text" formControlName="name" placeholder="Your name" />
+    <div *ngIf="submitted&& formData.controls.name.errors">
+        <div *ngIf=" submitted &&f formData.get('name').touched">
+            Fullname is required</div>
+    </div>
+    <!-- <div *ngIf="formData.get('name') ">
+        Please provide a name.
+    </div> -->
+    <br>
+    Age: <input type="text" formControlName="age" placeholder="Your age" />
+    <br>
+
+    <!-- <button (click)="submitForm()">Submit</button> -->
+    <button type="submit" (click)="submitForm()">Submit2</button>
+</form>

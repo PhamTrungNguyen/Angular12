@@ -1,0 +1,37 @@
+<div class="packet">
+    <div class="test">
+
+        <p>home works!</p>
+        <h2>Hello {{name}}!</h2>
+        <input type="text" value="{{name}}">
+        <input type="text" [value]="name" [title]='"day la " + name'>
+        <input type="text" [(ngModel)]="age">
+        <!--  <h2 *ngIf="age<18">Dưới 18</h2>
+        <h2 *ngIf="age>=18">Trên 18</h2> -->
+        <div *ngIf="age< 18 then young else old"> </div>
+        <ng-template #young>
+            <h2> Dưới 18</h2>
+        </ng-template>
+        <ng-template #old>
+            <h2> Trên 18</h2>
+        </ng-template>
+        <button (click)="resetName()">Reset Name</button>
+    </div>
+    <div>
+        <ul [ngSwitch]="login">
+            <li *ngSwitchCase="'user'">
+                <span>I am user</span>
+            </li>
+            <li *ngSwitchCase="'admin'">
+                <span>I am admin</span>
+            </li>
+            <li *ngSwitchDefault=>
+                <span>I am default</span>
+            </li>
+        </ul>
+        <span appHighlight>Trung Nguyen</span>
+        <span [appHighlight]="'red'">Trung Nguyen</span>
+    </div>
+    <div>this is number: {{counter}}</div>
+    <div>this is number: {{counter}}</div>
+</div>

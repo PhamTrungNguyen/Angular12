@@ -1,0 +1,19 @@
+<p>about works!</p>
+<div *ngFor="let item of fruit; let i=index">
+    <li>{{i+1}}.{{ item }}</li>
+</div>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>price</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of fruit; let i=index">
+        <tr>
+            <td>{item}</td>
+            <td>100.000</td>
+        </tr>
+    </tbody>
+</table>

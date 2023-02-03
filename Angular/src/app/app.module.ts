@@ -6,9 +6,35 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
+import { OnSalePipe } from './on-sale.pipe';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HighlightDirective } from './Directives/highlight.directive';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ParentComponent } from './parent/parent.component';
+import { ParentSonComponent } from './parent-son/parent-son.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    OnSalePipe,
+    PageNotFoundComponent,
+    HighlightDirective,
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent,
+    ParentComponent,
+    ParentSonComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
